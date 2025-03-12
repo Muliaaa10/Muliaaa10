@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Mulia</title>
+    <link rel="stylesheet" href="tailwand.css">
+    <style>
+      /* General Styling */
+      body {
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(135deg, #667eea, #764ba2);
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          color: white;
+      }
+
+      .container {
+          max-width: 800px;
+          margin: 20px auto;
+          background: rgba(255, 255, 255, 0.9);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          color: black;
+      }
+
+      .title {
+          font-size: 2rem;
+          color: #052f3b;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .photo-gallery h2 {
+          color: #333;
+      }
+
+      .photo-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 15px;
+          margin-top: 20px;
+      }
+
+      .photo-card {
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          padding: 10px;
+          text-align: center;
+      }
+
+      .photo-image {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+      }
+
+      .download-button {
+          display: inline-block;
+          margin-top: 10px;
+          background: #28a745;
+          color: white;
+          padding: 8px 12px;
+          border-radius: 5px;
+          text-decoration: none;
+      }
+
+      .download-button:hover {
+          background: #218838;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">By Mulia</h1>
+        <div class="photo-gallery">
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="fotoacu.jpg" class="photo-image" alt="Foto Acu" />
+                    <a href="fotoacu.jpg" download class="download-button">Download Foto Acu</a>
+                </div>
+                <div class="photo-card">
+                    <img src="e-ktp.jpg" class="photo-image" alt="E-KTP" />
+                    <a href="e-ktp.jpg" download class="download-button">Download E-KTP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="education-history">
+          <h2>Riwayat Pendidikan</h2>
+          <p>Pernah bersekolah di SDN 1 Citapen dari tahun 2012-2018, beranjak ke SMPN 3 Ciawi dari tahun 2018-2021, kemudian naik ke jenjang SMA tetapnya bersekolah di SMAN 1 Caringin.</p>
+      </div>
+        <div id="photo-grid" class="photo-grid"></div>
+    </div>
+</body>
+</html>
