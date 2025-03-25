@@ -78,13 +78,21 @@
         <h1 class="title">By Mulia</h1>
         <div class="photo-gallery">
             <div class="photo-grid">
-                <div class="photo-card">
+                <div class="photo-card" onclick="openModal('fotoacu.jpg')">
                     <img src="fotoacu.jpg" class="photo-image" alt="Foto Acu" />
                     <a href="fotoacu.jpg" download class="download-button">Download Foto Acu</a>
                 </div>
-                <div class="photo-card">
+                <div class="photo-card" onclick="openModal('new.png')">
+                    <img src="new.png" class="photo-image" alt="new.png" />
+                    <a href="new.png" download class="download-button">Download Foto Acu Terbaru</a>
+                </div>
+                <div class="photo-card" onclick="openModal('e-ktp.jpg')">
                     <img src="e-ktp.jpg" class="photo-image" alt="E-KTP" />
                     <a href="e-ktp.jpg" download class="download-button">Download E-KTP</a>
+                </div>
+                <div class="photo-card" onclick="openModal('TTD.jpg')">
+                    <img src="TTD.jpg" class="photo-image" alt="TTD" />
+                    <a href="TTD.jpg" download class="download-button">Download TTD</a>
                 </div>
             </div>
         </div>
@@ -96,5 +104,22 @@
       </div>
         <div id="photo-grid" class="photo-grid"></div>
     </div>
+
+        <!-- Modal -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <img id="modalImage" class="modal-content" />
+        </div>
+    
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById('modalImage').src = imageSrc;
+                document.getElementById('imageModal').style.display = 'flex';
+            }
+    
+            function closeModal() {
+                document.getElementById('imageModal').style.display = 'none';
+            }
+        </script>
+
 </body>
 </html>
